@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
+app.get('/api', (req, res) => {
+  res.semd('SERVER RESPONSE');
+})
+
 app.listen(PORT, () => {
   console.log('server running...');
 });
