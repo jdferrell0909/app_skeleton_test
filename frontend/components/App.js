@@ -7,7 +7,7 @@ const App = () => {
     axios
       .get('/api')
       .then((response) => {
-        console.log(response.data)
+        console.log('inside useEffect', response.data)
       })
       .catch((err) => {
         console.log(err.message)

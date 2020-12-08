@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
-  res.semd('SERVER RESPONSE');
+  res.send('SERVER RESPONSE inside server.js');
 })
 
 app.listen(PORT, () => {
