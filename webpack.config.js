@@ -4,14 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './frontend/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'build'),
+    filename: 'index_bundle.js'
   },
   mode: 'development',
   devServer: {
     publicPath: '/build',
     proxy: {
-      '/api': 'http://localhost:3000'
+      '/': 'http://localhost:5000'
     }
   },
   module: {
